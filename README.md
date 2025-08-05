@@ -3,7 +3,7 @@
 
 [![Abrir en Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juancaalcaraz/Analisis-de-Sentimientos-en-Reviews-de-Amazon-usando-Machine-Learning-y-Deep-Learning/blob/main/Analisis_de_sentimientos_con_Scikit_learn.ipynb)
 
-
+---
 
 ## 📌 Descripción
 
