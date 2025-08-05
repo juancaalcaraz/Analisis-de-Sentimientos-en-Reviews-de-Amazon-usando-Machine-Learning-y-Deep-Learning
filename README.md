@@ -1,6 +1,7 @@
 # Análisis de Sentimientos en Reseñas de Amazon usando Machine Learning y Deep Learning
 ### Si no puedes ver el notebook en Github prueba con Colab.
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juancaalcaraz/Analisis-de-Sentimientos-en-Reviews-de-Amazon-usando-Machine-Learning-y-Deep-Learning/Analisis_de_sentimientos_con_Scikit_learn.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/juancaalcaraz/Analisis-de-Sentimientos-en-Reviews-de-Amazon-usando-Machine-Learning-y-Deep-Learning/blob/main/Analisis_de_sentimientos_con_Scikit_learn.ipynb)
+
 
 ## 📌 Descripción
 
