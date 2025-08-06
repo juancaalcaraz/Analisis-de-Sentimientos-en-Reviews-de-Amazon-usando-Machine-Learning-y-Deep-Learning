@@ -112,26 +112,69 @@ Estos resultados reflejan las limitaciones de los enfoques supervisados tradicio
 
 ## 🖼️ Visualizaciones
 ### Desbalanceo de clases:
+Esta es la distribución de las clases en el dataset:
+
 ![Desbalance de clases](img/Desbalance.png)
 
-### SGDClasiffier reporte:
-![SGDClasiffier reporte](img/SGDC_reporte.png)
+Como se puede observar en el gráfico, la clase **excelente** está sobrerrepresentada, representando más del 60% del total del dataset.
 
-### Regresión logística: 
+---
+
+### Reporte de `SGDClassifier`:
+En el primer entrenamiento se utilizó **SGDClassifier** con `loss='log'` y el vectorizador **HashingVectorizer**.
+
+![SGDClassifier reporte](img/SGDC_reporte.png)
+
+Como se puede ver, las clases **excelente** y **pésima** son las que obtienen mejores resultados.
+
+---
+
+### Regresión logística:
+La regresión logística fue otro modelo probado para la clasificación. A continuación se muestra su resultado con la distribución original de los datos:
+
 ![Matriz_confusion_LR](img/Matriz_confusion_LR.png)
+
+Aquí se muestra el resultado al entrenar el modelo con datos balanceados manualmente y evaluarlo con la distribución original:
 
 ![Matriz_confusion_LR_balanceado](img/Matriz_LR_balanceado_test_desbalanceado.png)
 
+---
+
+También probamos dividir el problema en dos etapas:  
+1. Determinar primero la **polaridad general** de la reseña.  
+2. Luego clasificarla de forma más específica con otro modelo entrenado para identificar el **nivel de sentimiento**.
+
+**Matriz de polaridad:**
+
 ![Matriz_polaridad](img/Matriz_polaridad.png)
+
+**Matriz del umbral positivo con umbral de decisión:**
 
 ![Matriz_pos_umbral](img/Matriz_pos_umbral.png)
 
-### MLP curva de pérdida:
+---
+
+### Curva de pérdida - MLP:
+Otro clasificador que probamos fue el **Multilayer Perceptron (MLP)**.
 
 ![MLP curva de pérdida](img/Curva_loss_MLP.png)
 
+Como se puede observar, la pérdida va disminuyendo a lo largo de las épocas de entrenamiento, lo que indica un buen ajuste a los datos de entrenamiento.
+
+---
+
 ### Bidirectional LSTM:
+Esta es la curva de pérdida del entrenamiento y la validación del **Bidirectional LSTM**:
 
 ![LSTM curva de pérdida](img/Curva_de_perdida_Bidirectional_LSTM.png)
 
+Se puede ver cómo la pérdida de entrenamiento disminuye con las épocas. Sin embargo, la pérdida de validación no varía demasiado a partir de la **época 4**, lo que indica que el modelo deja de capturar nuevos patrones a partir de ese punto.
+
+---
+
+**Matriz de confusión de Bidirectional LSTM:**
+
 ![Matriz de confusión](img/Matriz_confusion_Biderectional.png)
+
+A partir de esta matriz podemos inferir que el modelo clasifica adecuadamente los extremos de los polos del sentimiento, así como el centro. Esto sugiere que, si la clasificación se redujera a solo tres clases (por ejemplo: negativa, neutra y positiva), nuestro **Bidirectional LSTM** podría tener un desempeño significativamente mejor que el actual.
+ 
