@@ -28,7 +28,7 @@ Se comparan modelos de machine learning clásicos con redes neuronales profundas
 
 ## 📚 Dataset
 
-El conjunto de datos proviene de reseñas de Amazon, y contiene aproximadamente 10,000 muestras etiquetadas en cinco clases. La distribución de clases es altamente desbalanceada:
+El conjunto de datos proviene de reseñas de Amazon, y contiene aproximadamente 7.000.000 de muestras etiquetadas en cinco clases. La distribución de clases es altamente desbalanceada:
 
 | Clase | Descripción       | Proporción estimada |
 |-------|-------------------|----------------------|
@@ -37,6 +37,10 @@ El conjunto de datos proviene de reseñas de Amazon, y contiene aproximadamente 
 | 2     | Neutro            | ~10%                 |
 | 3     | Positivo          | ~15%                 |
 | 4     | Muy positivo      | ~63%                 |
+
+> ⚠️ **Nota:** Este dataset es propiedad de Amazon y se utiliza bajo una licencia de uso académico/no comercial, tal como fue presentado en el artículo:  
+> **Ni, J., Li, J., & McAuley, J. (2019).** *Justifying recommendations using distantly-labeled reviews and fine-grained aspects*. EMNLP.  
+> Más información: [https://nijianmo.github.io/amazon](https://nijianmo.github.io/amazon)
 
 ---
 
