@@ -111,3 +111,27 @@ Estos resultados reflejan las limitaciones de los enfoques supervisados tradicio
 ---
 
 ## 🖼️ Visualizaciones
+### Desbalanceo de clases:
+![Desbalance de clases](img/Desbalance.png)
+
+### SGDClasiffier reporte:
+![SGDClasiffier reporte](img/SGDC_reporte.png)
+
+### Regresión logística: 
+![Matriz_confusion_LR](img/Matriz_confusion_LR.png)
+
+![Matriz_confusion_LR_balanceado](img/Matriz_LR_balanceado_test_desbalanceado.png)
+
+![Matriz_polaridad](img/Matriz_polaridad.png)
+
+![Matriz_pos_umbral](img/Matriz_pos_umbral.png)
+
+### MLP curva de pérdida:
+
+![MLP curva de pérdida](img/Curva_loss_MLP.png)
+
+### Bidirectional LSTM:
+
+![LSTM curva de pérdida](img/Curva_de_perdida_Bidirectional_LSTM.png)
+
+![Matriz de confusión](img/Matriz_confusion_Biderectional.png)
